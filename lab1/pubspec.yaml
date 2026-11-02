@@ -1,0 +1,14 @@
+name: lab1_oop
+description: 'Лабораторна робота №1 з ООП (Dart + Flutter), номер у журналі 9.'
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+flutter:
+  uses-material-design: true
