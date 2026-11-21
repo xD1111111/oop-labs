@@ -1,17 +1,35 @@
-# lab3
 
-A new Flutter project.
+# Лабораторна робота №3 — Графічний редактор із Toolbar
 
-## Getting Started
+## Опис
 
-This project is a starting point for a Flutter application.
+Розширення графічного редактора з лабораторної роботи №2. Програма реалізована мовою Dart із використанням Flutter для Windows.
 
-A few resources to get you started if this is your first Flutter project:
+## Можливості
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Малювання крапки, лінії, прямокутника та еліпса.
+- Панель Toolbar із чотирма кнопками вибору інструментів.
+- Підказки з назвами інструментів.
+- Вибір фігур через меню «Об'єкти».
+- Синхронізація вибору між меню та Toolbar.
+- Синій попередній контур під час малювання.
+- Очищення полотна та підрахунок фігур.
+- Максимальна кількість фігур — 110.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Структура проєкту
+
+- `lib/main.dart` — меню, Toolbar та інтерфейс.
+- `lib/editor.dart` — колекція фігур і керування редактором.
+- `lib/shape.dart` — ієрархія класів геометричних фігур.
+
+## Принципи ООП
+
+Використано абстрактний базовий клас, наслідування, інкапсуляцію та поліморфізм.
+
+## Запуск
+
+```powershell
+cd lab3
+flutter pub get
+flutter run -d windows
+```
