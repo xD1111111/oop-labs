@@ -1,17 +1,42 @@
-# lab4
 
-A new Flutter project.
+# Лабораторна робота №4 — Розширений графічний редактор
 
-## Getting Started
+## Опис
 
-This project is a starting point for a Flutter application.
+Удосконалення структури об'єктно-орієнтованого графічного редактора. Програма розроблена мовою Dart із використанням Flutter для Windows.
 
-A few resources to get you started if this is your first Flutter project:
+## Можливості
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+- Шість типів фігур:
+  - Крапка.
+  - Лінія.
+  - Прямокутник.
+  - Еліпс.
+  - Лінія з кружечками на кінцях.
+  - Каркас куба.
+- Панель Toolbar із шістьма кнопками та підказками.
+- Синхронізація вибору інструментів між меню та Toolbar.
+- Синій пунктирний попередній контур під час малювання.
+- Очищення робочої області.
+- Підрахунок фігур із максимальною кількістю 110.
+- Єдиний глобальний екземпляр редактора.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Структура проєкту
+
+- `lib/main.dart` — головне вікно, меню та Toolbar.
+- `lib/editor.dart` — керування колекцією фігур і пунктирним контуром.
+- `lib/shape.dart` — базовий клас Shape, похідні класи та mixin.
+
+## Принципи ООП
+
+Реалізовано абстракцію, наслідування, інкапсуляцію та поліморфізм.
+
+Для повторного використання методів малювання застосовано Dart `mixin` (`LineDrawing`, `RectangleDrawing`, `EllipseDrawing`). Це адаптація множинного успадкування з методички до можливостей Dart, а не повний еквівалент множинного успадкування класів у C++.
+
+## Запуск
+
+```powershell
+cd lab4
+flutter pub get
+flutter run -d windows
+```
