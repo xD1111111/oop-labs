@@ -1,17 +1,35 @@
-# lab2
 
-A new Flutter project.
+# Лабораторна робота №2 — Графічний редактор
 
-## Getting Started
+## Опис
 
-This project is a starting point for a Flutter application.
+Програма розроблена мовою Dart із використанням Flutter для Windows у межах лабораторної роботи з об'єктно-орієнтованого програмування.
 
-A few resources to get you started if this is your first Flutter project:
+Реалізовано графічний редактор для створення геометричних фігур за допомогою миші.
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Можливості
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Малювання чотирьох типів фігур: крапка, лінія, прямокутник, еліпс.
+- Вибір фігури через меню «Об'єкти».
+- Червоний попередній контур під час малювання.
+- Очищення робочої області через меню «Файл».
+- Підрахунок створених фігур.
+- Максимальна кількість фігур — 109.
+
+## Структура проєкту
+
+- `lib/main.dart` — графічний інтерфейс і меню.
+- `lib/editor.dart` — керування фігурами та процесом малювання.
+- `lib/shape.dart` — класи геометричних фігур.
+
+## Принципи ООП
+
+Використано абстракцію, наслідування, інкапсуляцію та поліморфізм.
+
+## Запуск
+
+```powershell
+cd lab2
+flutter pub get
+flutter run -d windows
+```
